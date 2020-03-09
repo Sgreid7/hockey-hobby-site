@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "hockey-hobby-site",
+  "scripts": {
+    "start": "browser-sync start --server public --files public",
+    "deploy": "netlify deploy --prod --dir=public",
+    "setup-deploy": "app-app --deploy && yarn deploy",
+    "postdeploy": "echo 'Your site was deployed to https://hockey-hobby-site-sam.netlify.com'"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "useTabs": false
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "prettier": "^1.19.1",
+    "stylelint": "^13.2.1",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "homepage": "https://hockey-hobby-site-sam.netlify.com"
+}
